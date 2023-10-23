@@ -1,17 +1,19 @@
 import React from 'react'
+import { useState } from 'react';
 import image from "./image/smart.png"
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import MenuIcon from '@material-ui/icons/Menu';
+
 const Header = () => {
   return (
     
-    <div className='flex flex-row justify-between items-center p-2'>
+    <div className='flex flex-row justify-between items-center p-2 bg-smartstaking-500'>
         <div className='ml-10'>
         <img src={image} alt='image' className='w-[200px] h-[70px] object-cover'/>
         </div>
         
          <div className=' flex w-full flex-col items-center mt-[203px] md:mt-0 md:justify-end md:ml-[300px]  absolute md:relative'>
-          <ul className=' bg-smartstaking-400  text-sm text-white border-b-white capitalize md:flex flex-row md:text-white m-4 md:uppercase pl-2 md:text-sm font-semibold '>
+          <ul className=' hidden bg-smartstaking-500  text-sm text-white border-b-white capitalize md:flex flex-row md:text-white m-4 md:uppercase pl-2 md:text-sm font-semibold '>
             
             <li className='border-b-[1px bg-gray-100]'> Home <span className='p-3  font-bold text-base pl-72 md:pl-3'> + </span></li>
             <li> Project <span className='p-3 font-bold text-base pl-72 md:pl-2 '> + </span></li>
