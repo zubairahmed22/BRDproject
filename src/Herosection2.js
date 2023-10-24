@@ -3,12 +3,24 @@ import Card from "./Card"
 import icon_2 from "./image/metic.png"
 import topIcon from "./image/binance.png"
 import icon_1 from "./image/solana.png"
+import Slider from "react-slick"; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"; 
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 const Herosection2 = () => {
+
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
-    <div className='w-full md:flex justify-between  bg-smartstaking-400 mt-20 h-auto overflow-auto'>
+    <div className='w-full md:flex justify-between  bg-smartstaking-400 mt-20 h-auto '>
         <div className='ml-14'>
            <h4 className='text-teal-400 text-2xl mt-6 font-sami-boldS'>
             Trending</h4>
@@ -25,7 +37,10 @@ adipisicing elit. Cum, quod?
   <button className='bg-smartstaking-500 w-12 h-12 ml-4 text-teal-400 rounded-sm'><ArrowForwardIcon/></button>
 </div>
         </div>
-  <div className=' ml-14 items-center md:flex md:overflow-auto'>
+  
+
+  <div className=' ml-14 flex  overflow-auto'>
+
   <Card
   topImage={icon_2}
   />
@@ -35,7 +50,10 @@ adipisicing elit. Cum, quod?
    <Card
    topImage={icon_1}
    />
+
   </div>
+
+
    
     
     </div>

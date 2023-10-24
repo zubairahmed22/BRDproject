@@ -46,14 +46,14 @@ const Card = ({topImage}) => {
           <span>TBA</span>
         </div>
       </div>
-      <div className='ml-4 mr-4 text-gray-400 mt-3'>
+      <div className='ml-4 mr-4 text-gray-400 mt-3 pb-6'>
         <p>Raised Ammount</p>
         <p className='text-teal-400 font-bold mt-2'>5000 <span className='text-white font-bold'> / 15000 BUSD</span></p>
         <div className='bg-smartstaking-400 h-3  rounded-sm  relative mt-2'>
         <div className='bg-teal-400  absolute  pl-24 h-3 rounded-l-sm' ></div>
         </div>
 
-        <button className='bg-teal-400 w-32 text-black rounded-sm h-10 mt-6'>View Details</button>
+        <button className='bg-teal-400 w-32 text-black rounded-sm  h-10 mt-6'>View Details</button>
         
       </div>
     </div>
