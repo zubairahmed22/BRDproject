@@ -3,21 +3,17 @@ import Card from "./Card"
 import icon_2 from "./image/metic.png"
 import topIcon from "./image/binance.png"
 import icon_1 from "./image/solana.png"
-import Slider from "react-slick"; 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel} from 'react-responsive-carousel';
 
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+
+
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 const Herosection2 = () => {
 
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+ 
 
   return (
     <div className='w-full md:flex justify-between  bg-smartstaking-400 mt-20 h-auto '>
@@ -38,22 +34,31 @@ adipisicing elit. Cum, quod?
 </div>
         </div>
   
-
-  <div className=' ml-14 flex  overflow-auto'>
-
+      
+  <div className=' ml-14 flex  mr-14'>
+  
+ 
+  <Carousel autoPlay width={800} selectedItem={2} interval={5000} dynamicHeight={false}infiniteLoop={true} centerMode={true} centerSlidePercentage={45} showArrows={false}stopOnHover={false} showIndicators={false} axis='horizontal'>  
   <Card
   topImage={icon_2}
   />
+  
+ 
+ 
    <Card
    topImage={ topIcon}
    />
+     
+  
    <Card
    topImage={icon_1}
    />
-
+  
+   
+  </Carousel>
   </div>
-
-
+  
+ 
    
     
     </div>

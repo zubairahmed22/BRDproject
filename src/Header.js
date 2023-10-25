@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import image from "./image/smart.png"
-import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
-import MenuIcon from '@material-ui/icons/Menu';
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   return (
