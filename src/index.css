@@ -6,6 +6,23 @@
     animation: bounce 6s infinite;
   }
 
+  
+element.style {
+  min-width: 35%;
+}
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  flex-direction: column;
+  flex-flow: column;
+}
+
+element.style {
+  min-width: 35%;
+}
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  flex-direction: column;
+  flex-flow: column;
+}
+
   @keyframes bounce {
     0%, 100% {
       transform: translateY(-10%);
@@ -17,11 +34,5 @@
     }
   }
 
-  img.absolute.bottom-0.right-0.mr-3.mb-32.w-8.border.border-black.rounded-full.bg-black{
-    width: 25px;
-  }
-
-  img.w-16.h-16.rounded-sm.border-2.absolute.bottom-0.border-teal-700 {
-    width: 60px;
-    border: 1px solid #159f9f;
-}
+ 
+ 

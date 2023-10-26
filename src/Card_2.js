@@ -7,7 +7,7 @@ const Card_2 = () => {
     <div className=' pb-4 ml-4 mr-4  h-auto items-center  md:flex bg-smartstaking-500 md:mr-20 mt-20 md:h-40 md:pb-3
      rounded-sm md:ml-20 md:justify-between'>
         
-        <div className='flex w-[500px] ml-4  md:justify-between items-center'>
+        <div className='flex md:w-[500px] md:ml-4  md:justify-between items-center'>
             <img src={imageBox} className='  md:w-20 md:h-20 rounded-md mt-4'/>
             <div>
                 <h1 className='text-white text-2xl ml-6 font-bold mt-4 md:mr-32'>Cyber balltleField</h1>

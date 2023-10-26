@@ -3,7 +3,7 @@ import boxImage from "./image/02.jpg"
 
 import squarbox from "./image/6.png"
 
-const Card = ({topImage}) => {
+const Card = ({topImage,heading, secondHeading, amount, percent, paragraph}) => {
   return (
     <div className='mr-14 mt-12'>
     <div className='w-[330px] bg-smartstaking-500'>
@@ -22,38 +22,36 @@ const Card = ({topImage}) => {
       </div>
     
       <div className='flex ml-4 relative'>
-        <div>
+        {/* <div>
         <img src={squarbox} 
         className='w-16 h-16 rounded-sm border-2  absolute bottom-0 border-teal-700'/>
-        </div>
-        <div className=' w-64 ml-16  relative'>
-          <h1 className=' text-white font-bold ml-10 
+        </div> */}
+        <div className=' w-64 justify-start'>
+          <h1 className=' text-white font-bold mt-4  
            bg-smartstaking-500 '>
-          Fire Xon
+        {heading}
           </h1>
          
         </div>
       </div>
       <div className='flex justify-between mr-4 ml-4 mt-10'>
         <div className='text-gray-400'>
-          <p>Round Name:</p>
-          <p>Participent</p>
-          <p>Project Start</p>
+          <p className='font-bold font-base'>{secondHeading}</p>
+         
         </div>
-        <div className='flex flex-col text-teal-400'>
-          <span>Public</span>
-          <span>42</span>
-          <span>TBA</span>
+        <div className='flex flex-col font-bold text-smartstaking-600'>
+          <span></span>
+          
         </div>
       </div>
       <div className='ml-4 mr-4 text-gray-400 mt-3 pb-6'>
-        <p>Raised Ammount</p>
-        <p className='text-teal-400 font-bold mt-2'>5000 <span className='text-white font-bold'> / 15000 BUSD</span></p>
+        <p>{ paragraph}</p>
+        <p className='text-smartstaking-600 font-bold mt-2'>{amount}<span className='text-white font-bold ml-2'>{percent}</span></p>
         <div className='bg-smartstaking-400 h-3  rounded-sm  relative mt-2'>
-        <div className='bg-teal-400  absolute  pl-24 h-3 rounded-l-sm' ></div>
+        <div className='bg-smartstaking-600  absolute  pl-24 h-3 rounded-l-sm' ></div>
         </div>
 
-        <button className='bg-teal-400 w-32 text-black rounded-sm  h-10 mt-6'>View Details</button>
+        <button className='bg-smartstaking-600 text-white w-32 rounded-sm  h-10 mt-6'>View Details</button>
         
       </div>
     </div>

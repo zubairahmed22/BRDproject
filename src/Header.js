@@ -1,35 +1,35 @@
 import React from 'react'
-import { useState } from 'react';
-import image from "./image/smart.png"
+
+import image from "./image/smart_logo.png"
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   return (
     
-    <div className='flex flex-row justify-between items-center p-2 bg-smartstaking-500'>
-        <div className='ml-10'>
+    <div className='flex flex-row justify-between items-center p-2 bg-white'>
+        <div className='ml-0'>
         <img src={image} alt='image' className='w-[200px] h-[70px] object-cover'/>
         </div>
         
-         <div className=' flex w-full flex-col items-center mt-[203px] md:mt-0 md:justify-end md:ml-[300px]  absolute md:relative'>
-          <ul className=' hidden bg-smartstaking-500  text-sm text-white border-b-white capitalize md:flex flex-row md:text-white m-4 md:uppercase pl-2 md:text-sm font-semibold '>
+         <div className='  items-center mt-[203px] md:mt-0 md:justify-end md:ml-[300px]  absolute md:relative'>
+          <ul className=' hidden bg-smartstaking-500 md:bg-white text-sm  border-b-white capitalize md:flex flex-row text-black m-4 md:uppercase pl-2 md:text-sm font-semibold '>
             
-            <li className='border-b-[1px bg-gray-100]'> Home <span className='p-3  font-bold text-base pl-72 md:pl-3'> + </span></li>
-            <li> Project <span className='p-3 font-bold text-base pl-72 md:pl-2 '> + </span></li>
-            <li> Stacking <span className='p-3 font-bold text-base pl-72 md:pl-2'> + </span></li>
-            <li> Pages <span className='p-3 font-bold text-base pl-72 md:pl-2'> + </span></li>
-            <li> Blog <span className='p-3 font-bold text-base pl-72 md:pl-2'> + </span></li>
-            <li className='mt-1'> Contact</li>
+            <li className='border-b-[1px bg-gray-100] hover:text-smartstaking-600 cursor-pointer'> Home </li>
+            <li className='pl-3 pr-3 hover:text-smartstaking-600 cursor-pointer'> Project </li> 
+            <li className='pl-3 pr-3 hover:text-smartstaking-600 cursor-pointer'> Stacking</li>
+            <li className='pl-3 pr-3 hover:text-smartstaking-600 cursor-pointer'> Pages </li>
+            <li className='pl-3 pr-3 hover:text-smartstaking-600 cursor-pointer'> Blog </li>
+            <li className='pl-3 pr-3 hover:text-smartstaking-600 cursor-pointer'> Contact</li>
             
           </ul>
           
           </div>   
           <div className='flex col-auto md:mr-10'>
-          <button className=' hidden md:bg-teal-500 rounded-md p-3 w-32 md:block md:text-black md:text-base md:text-sami-bold md:font-sami-bold md: relative text-start'>Connect</button>
-          <AccountBalanceWalletIcon className=' text-gray-400 text:hover-  md:text-black md:absolute mr-3 ml-[80px] md:mt-3 mt-2 cursor-pointer'/>
+          <button className=' hidden md:bg-smartstaking-600  rounded-md p-3 w-32 md:block md:mt-1 md:text-white md:text-base md:text-semi-bold md:font-semi-bold md:relative text-start'>Connect</button>
+          <AccountBalanceWalletIcon className=' text-gray-400 text:hover-  md:text-white  md:absolute mr-3 ml-[80px] md:mt-4 mt-2 cursor-pointer'/>
           <div className='md:hidden'>
-          <MenuIcon className=' md:hidden text-white mt-2 mr-6 cursor-pointer'
+          <MenuIcon className=' md:hidden text-smartstaking-600 mt-2 mr-6 cursor-pointer'
           
           />
           </div>

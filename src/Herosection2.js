@@ -16,7 +16,7 @@ const Herosection2 = () => {
  
 
   return (
-    <div className='w-full md:flex justify-between  bg-smartstaking-400 mt-20 h-auto '>
+    <div className='w-full md:flex md:justify-between  bg-smartstaking-400 mt-20 h-auto '>
         <div className='ml-14'>
            <h4 className='text-teal-400 text-2xl mt-6 font-sami-boldS'>
             Trending</h4>
@@ -35,9 +35,9 @@ adipisicing elit. Cum, quod?
         </div>
   
       
-  <div className=' ml-14 flex  mr-14'>
+  <div className=''>
   
- 
+{/*  
   <Carousel autoPlay width={800} selectedItem={2} interval={5000} dynamicHeight={false}infiniteLoop={true} centerMode={true} centerSlidePercentage={45} showArrows={false}stopOnHover={false} showIndicators={false} axis='horizontal'>  
   <Card
   topImage={icon_2}
@@ -55,7 +55,7 @@ adipisicing elit. Cum, quod?
    />
   
    
-  </Carousel>
+  </Carousel> */}
   </div>
   
  
